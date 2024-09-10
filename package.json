@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged"
+    "start": "nodemon server.js"
   },
   "author": "chi cuong",
   "license": "ISC",
@@ -14,8 +13,9 @@
     "express": "^4.19.2"
   },
   "devDependencies": {
-    "eslint": "4.17.0",
+    "eslint": "^9.10.0",
     "eslint-config-prettier": "^9.1.0",
+    "nodemon": "^3.1.4",
     "prettier": "^3.3.3"
   },
   "lint-staged": {
