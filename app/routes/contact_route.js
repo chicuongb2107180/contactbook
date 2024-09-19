@@ -1,7 +1,9 @@
 const express = require('express');
-const contact = require('../controllers/contact_controller');
+const contacts = require('../controllers/contact_controller');
 const router = express.Router();
 
-router.route("/").get(contact.findAll).post(contact.create).delete(contact.deleteAll);
-router.route("/favorite").get(contact.findAllFavorite);
-router.route("/:id").get(contact.findOne).put(contact.update).delete(contact.delete);
+router.route("/").get(contacts.findAll).post(contacts.create).delete(contacts.deleteAll);
+router.route("/favorite").get(contacts.findAllFavorite);
+router.route("/:id").get(contacts.findOne).put(contacts.update).delete(contacts.delete);
+
+module.exports = router;
